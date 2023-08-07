@@ -1,0 +1,18 @@
+24 x 5 / 60 = 2 minutos (importante colocar valores fáceis de controlar)
+
+free - Lista os recursos da máquina (memória)
+grep - Busca por linhas que fazem match do regex
+awk - Linguagem de programação (awk 'expressão') (awk '{print $3, $4, $5}' imprime as colunas)
+df - lista os discos e as suas informações (df -h disco)
+sed 's/%//g' - Remove os caracteres %
+cat /proc/net/dev - Arquivo que contém os dados de rede, geralmente sua placa começa com ethX
+sudo apt install sysstat
+mpstat - Comando para uso da cpu. Sintaxe: mpstat intervalo_em_segundo quantidade_de_reports - mpstat 1 1
+date +'%d-%m-%Y %H:%M:%S' - Pega a data e aplica o formato
+
+
+1 - $(command) is a modern synonym for `command` which stands for command substitution; it means run command and put its output here
+2 - ${variable} is just a disambiguation mechanism, so you can say ${var}text
+
+
+Explica o que cada item do mpstat mede: https://linux.die.net/man/1/mpstat
